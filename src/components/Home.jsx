@@ -7,6 +7,7 @@ import { Container } from "react-bootstrap";
 const Home = () => {
   return (
     <Container>
+      <img src="./images/HeroBanner.webp" className="img-fluid" alt="..." />
       <div className="mt-5">
         <Card style={{ width: "18rem" }} className="mx-auto">
           <Card.Img variant="top" src="holder.js/100px180" />
@@ -20,6 +21,7 @@ const Home = () => {
           </Card.Body>
         </Card>
       </div>
+      <div className="title-page">WELCOME</div>
     </Container>
   );
 };

@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <Navbar expand="sm" className="bg-body-tertiary shadow-sm">
+    <Navbar expand="sm" className="bg-body-tertiary shadow-lg sticky-top">
       <Container>
         <Link to="/">
           <img
@@ -30,7 +30,7 @@ function Header() {
             </Link>
             <Link to="/About" className="text-decoration-none">
               {" "}
-              <li className="text-uppercase mx-3 py-2 link-font">About us</li>
+              <li className="text-uppercase mx-3 py-2 link-font">About</li>
             </Link>
             <Link to="/Faq" className="text-decoration-none">
               <li className="text-uppercase mx-3 py-2 link-font">FAQs</li>

@@ -88,7 +88,7 @@ const Faq = () => {
             I want to ask a question personally regarding the Educational
             Assistance Program, what office should I go?
           </Accordion.Header>
-          <Accordion.Body>
+          <Accordion.Body className="">
             For inquiries about qualification, cross-matching & guidelines about
             the Educational Assistance. Please come & visit :
             <br />
@@ -101,8 +101,8 @@ const Faq = () => {
                 - Camarines Norte Provincial Office
               </span>
               <br />
-              <FontAwesomeIcon icon={faBuilding} /> Barangay 3 Justo Lukban St,
-              Daet, 4600 Camarines Norte
+              <FontAwesomeIcon icon={faBuilding} className="ms-2" /> Barangay 3
+              Justo Lukban St, Daet, 4600 Camarines Norte
             </p>
             For inquiries about the Application. Please come & visit :
             <p className="ms-3 mt-3">
@@ -112,9 +112,24 @@ const Faq = () => {
               </span>
               <span className="fw-normal">- Camarines Norte</span>
               <br />
-              <FontAwesomeIcon icon={faBuilding} /> 2nd Floor, Provincial
-              Capitol Grounds, Daet, 4600 Camarines Norte
+              <FontAwesomeIcon icon={faBuilding} className="ms-2" /> 2nd Floor,
+              Provincial Capitol Grounds, Daet, 4600 Camarines Norte
             </p>
+          </Accordion.Body>
+        </Accordion.Item>
+        <Accordion.Item eventKey="4">
+          <Accordion.Header className="accordion-title">
+            I was unable to attend to the schedule of my pay-out, What should I
+            do?
+          </Accordion.Header>
+          <Accordion.Body className="text-center">
+            If you're unable to claim your assistance/cash grant on the schedule
+            that has been given, you may still able to claim the grant on the
+            other available schedule. Unfortunately, if you're still unable to
+            claim your grant, you have to wait for the next schedule of
+            educational assistance pay-out, however, you may ask{" "}
+            <strong>DSWD Camarines Norte Provincial Office</strong> regarding to
+            that matter.
           </Accordion.Body>
         </Accordion.Item>
       </Accordion>

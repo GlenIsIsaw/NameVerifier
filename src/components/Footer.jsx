@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <Container>
-      <footer className="py-3 my-4 sticky-bottom">
+      <footer className="py-3 my-4">
         <ul className="nav justify-content-center border-bottom pb-3 mb-3">
           <Link to="/" className="text-decoration-none">
             <li className="nav-item nav-link px-2 text-body-secondary">Home</li>
