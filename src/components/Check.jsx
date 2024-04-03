@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import { Container } from "react-bootstrap";
 
 const Check = () => {
   return (
-    <div>Check</div>
-  )
-}
+    <div>
+      <Container>Check</Container>
+    </div>
+  );
+};
 
-export default Check
+export default Check;

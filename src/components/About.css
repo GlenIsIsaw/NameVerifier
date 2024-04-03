@@ -1,1 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
+.title-page {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 100px;
+  color: #355e3b;
+}
+
+@media only screen and (max-width: 600px) {
+  .title-page {
+    font-size: 50px;
+  }
+}

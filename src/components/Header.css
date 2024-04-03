@@ -4,4 +4,25 @@
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-style: normal;
+  color: #355e3b;
+  position: relative;
+}
+
+.link-font:hover {
+  color: #228b22;
+}
+
+.link-font::before {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #228b22;
+  transition: all 0.2s;
+}
+
+.link-font:hover::before {
+  width: 100%;
 }
