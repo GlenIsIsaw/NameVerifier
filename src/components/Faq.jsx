@@ -1,6 +1,6 @@
 import React from "react";
 import Accordion from "react-bootstrap/Accordion";
-import "./Faq.css";
+import "../styles/Faq.css";
 import { Container } from "react-bootstrap";
 import Table from "react-bootstrap/Table";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -129,7 +129,7 @@ const Faq = () => {
             claim your grant, you have to wait for the next schedule of
             educational assistance pay-out, however, you may ask{" "}
             <strong>DSWD Camarines Norte Provincial Office</strong> regarding to
-            that matter.
+            this matter.
           </Accordion.Body>
         </Accordion.Item>
       </Accordion>
