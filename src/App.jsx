@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import { Header, Home, About, Faq, Check, Footer } from "./components";
+import { Header, Home, About, Faq, Check, Footer } from "./javascript";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Route, Routes } from "react-router-dom";
 
