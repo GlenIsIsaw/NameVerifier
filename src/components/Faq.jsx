@@ -9,7 +9,7 @@ import { faBuilding } from "@fortawesome/free-regular-svg-icons";
 const Faq = () => {
   return (
     <Container className="mt-5">
-      <div className="title-page">Frequently Asked Questions</div>
+      <div className="faq-title-page">Frequently Asked Questions</div>
       <Accordion
         defaultActiveKey="0"
         flush
