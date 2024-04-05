@@ -9,7 +9,7 @@ import Button from "react-bootstrap/Button";
 const CardHome = () => {
   return (
     <CardGroup>
-      <Row xs={1} md={3} className="g-4 mt-5">
+      <Row xs={1} md={3} className="g-4">
         <Col>
           <Card className="h-100">
             <Card.Img

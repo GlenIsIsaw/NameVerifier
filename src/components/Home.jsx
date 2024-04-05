@@ -38,12 +38,16 @@ const Home = () => {
           content. A joke, perhaps. Unfortunately, there's none of that here.
         </p>
       </div>
+      <div className="secondary-title">post and activities</div>
       <CardHome />
+     
       <div className="row justify-content-md-center">
       <div className="col-lg-4 mt-5">
+      <div className="secondary-title">Social Media</div>
       <SocialsMedia />
       </div>
-      <div className="col-sm">
+      <div className="col-sm mt-5">
+      <div className="secondary-title">Announcement</div>
       <Announcement />
       </div>
       </div>
