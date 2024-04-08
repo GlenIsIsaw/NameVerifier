@@ -9,4 +9,5 @@ export { default as DataModal } from "../components/DataModal";
 export { default as CardHome } from "../components/CardHome";
 export { default as SocialsMedia } from "../components/SocialsMedia";
 export { default as Announcement } from "../components/Announcement";
+export { default as Banner } from "../components/Banner";
 

@@ -1,15 +1,29 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Accordion from "react-bootstrap/Accordion";
 import "../styles/Faq.css";
 import { Container } from "react-bootstrap";
 import Table from "react-bootstrap/Table";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBuilding } from "@fortawesome/free-regular-svg-icons";
+import { motion } from "framer-motion";
 
 const Faq = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
   return (
     <Container className="mt-5">
+      <motion.div
+      initial={{ opacity: 0, y: 20 }} // Start from slightly below to create fade-up effect
+      animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="faq-title-page">Frequently Asked Questions</div>
+      </motion.div>
+
       <Accordion
         defaultActiveKey="0"
         flush

@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 
 .home-title-page {
   text-align: start;
@@ -24,6 +26,26 @@
   color: #355e3b;
 }
 
+.message-name {
+  text-transform: uppercase;
+  font-family: "Jost", sans-serif;
+  font-size: 30px;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: #355e3b;
+}
+
+.message-name-position {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 15px;
+  font-style: normal;
+  color: #000000;
+ 
+}
+
 @media only screen and (max-width: 600px) {
   .home-title-page {
     text-align: center;
@@ -33,5 +55,19 @@
   .welcome-text {
     text-align: center;
     font-size: 15px;
+  }
+
+  .message-name {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .message-name-position {
+    text-align: center;
+    font-size: 10px;
+  }
+
+  .image {
+    display: none;
   }
 }

@@ -1,11 +1,23 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Container } from "react-bootstrap";
 import Data_Table from "./Data_Table";
 import '../styles/Check.css';
+import { motion } from "framer-motion";
 
 const Check = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
   return (
     <Container>
+      <motion.div
+      initial={{ opacity: 0, y: 20 }} // Start from slightly below to create fade-up effect
+      animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="title-page mt-5">Name Checker</div>
       <p className="sub-page lh-base">
         The Name Checker is a simple yet powerful tool designed to verify your
@@ -18,6 +30,7 @@ const Check = () => {
         provides instant feedback, indicating whether the entered name matches
         the payout schedule or if any adjustments are needed.
       </p>
+      </motion.div>
       <Data_Table />
     </Container>
   );
