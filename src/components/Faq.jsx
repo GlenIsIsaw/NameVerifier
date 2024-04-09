@@ -17,11 +17,11 @@ const Faq = () => {
   return (
     <Container className="mt-5">
       <motion.div
-      initial={{ opacity: 0, y: 20 }} // Start from slightly below to create fade-up effect
-      animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
-      transition={{ duration: 0.5 }}
-    >
-      <div className="faq-title-page">Frequently Asked Questions</div>
+        initial={{ opacity: 0, y: 20 }} // Start from slightly below to create fade-up effect
+        animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
+        transition={{ duration: 0.5 }}
+      >
+        <div className="faq-title-page">Frequently Asked Questions</div>
       </motion.div>
 
       <Accordion
@@ -82,7 +82,7 @@ const Faq = () => {
                   <td>
                     Select the{" "}
                     <span className="text-uppercase fw-bold text-success">
-                      Check Application
+                      Check my name
                     </span>{" "}
                     button at the top of the website
                   </td>

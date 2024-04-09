@@ -1,16 +1,14 @@
 import React, { useState } from "react";
-import { Table } from "react-bootstrap";
-import { Form } from "react-bootstrap";
-import { data } from "../data/data.js";
+import { Table, Form, Col, Row } from "react-bootstrap";
+import { data } from "../Data/data.js";
 
 const Data_Table = () => {
   const [search, setSearch] = useState("");
-  
-  return (
 
+  return (
     <div>
       <Form className="mt-5">
-        <Form.Group className="mb-3 mx-5">
+        <Form.Group className="mb-3">
           <Form.Control
             onChange={(e) => setSearch(e.target.value)}
             placeholder="Search Your First Name Here..."
@@ -21,10 +19,10 @@ const Data_Table = () => {
       <Table striped hover responsive="sm">
         <thead>
           <tr>
-            <th className="text-center">No.</th>
             <th className="text-start">First Name</th>
             <th className="text-start">Last Name</th>
-            <th className="text-start">Date Schedule</th>
+            <th className="text-center">Date Schedule</th>
+            <th className="text-center">Venue</th>
           </tr>
         </thead>
         <tbody>
@@ -32,19 +30,19 @@ const Data_Table = () => {
             .filter((item) => {
               return search.toLowerCase() === ""
                 ? item
-                : item.student_first_name.toLowerCase().includes(search);
+                : item.first_name.toLowerCase().includes(search);
             })
             .map((item) => (
               <tr key={item.id}>
-                <td className="text-center text-capitalize">{item.id}</td>
                 <td className="text-start text-capitalize">
-                  {item.student_first_name}
+                  {item.first_name}
                 </td>
-                <td className="text-start text-capitalize">
-                  {item.student_last_name}
+                <td className="text-start text-uppercase">{item.last_name}</td>
+                <td className="text-center text-capitalize text-success fw-bold">
+                  {item.date}
                 </td>
-                <td className="text-start fw-bold text-uppercase text-success">
-                  March 1, 2024
+                <td className="text-center text-capitalize text-success fw-bold">
+                  {item.venue}
                 </td>
               </tr>
             ))}

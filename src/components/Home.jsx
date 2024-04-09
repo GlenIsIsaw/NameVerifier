@@ -15,7 +15,12 @@ const Home = () => {
   return (
     <div className="App">
       <Container>
-        <img src="./images/HeroBanner.webp" className="img-fluid" alt="Padagos Lang" />
+        <img
+          src="./images/HeroBanner.webp"
+          className="img-fluid"
+          alt="Padagos Lang"
+          loading="lazy"
+        />
 
         <div className="clearfix mt-4">
           <img
@@ -23,6 +28,7 @@ const Home = () => {
             className="col-md-4 float-md-end ms-md-3 img-fluid  image"
             alt="Congresswoman Rosemarie Conejos Panotes"
             data-aos="fade-left"
+            loading="lazy"
           />
           <p className="home-title-page" data-aos="fade-right">
             WELCOME
@@ -36,7 +42,7 @@ const Home = () => {
             public service, is painstakingly described here. You'll discover the
             materials you need to keep informed and involved, whether you're a
             constituent in need of assistance or a curious bystander looking to
-            learn more about her activism.
+            learn more about her activity.
           </p>
 
           <p className="welcome-text lh-lg">

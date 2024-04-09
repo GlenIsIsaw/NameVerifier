@@ -36,10 +36,10 @@ function Header() {
               <li className="text-uppercase mx-3 py-2 link-font">FAQs</li>
             </Link>
             <Button
-              href="/Check"
+              href="/NameChecker"
               variant="outline-success text-uppercase fw-bold mx-3"
             >
-              Check Application
+              Check My Name
             </Button>{" "}
           </Nav>
         </Navbar.Collapse>

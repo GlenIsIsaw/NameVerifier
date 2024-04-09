@@ -27,6 +27,7 @@ const CardHome = () => {
                   variant="top"
                   className="img-size"
                   src="./images/433001501_390562857086117_1185920196191064819_n.webp"
+                  loading="lazy"
                 />
               </motion.div>
               <Card.Body>
@@ -61,6 +62,7 @@ const CardHome = () => {
                   variant="top"
                   className="img-size"
                   src="./images/434710789_397046489771087_7550260965335097355_n.webp"
+                  loading="lazy"
                 />
               </motion.div>
               <Card.Body>
@@ -95,6 +97,7 @@ const CardHome = () => {
                   variant="top"
                   className="img-size"
                   src="./images/435311166_396549496487453_107677607710607934_n.webp"
+                  loading="lazy"
                 />
               </motion.div>
               <Card.Body>
