@@ -7,7 +7,7 @@ const Data_Table = () => {
 
   return (
     <div>
-      <Form className="mt-5">
+      <Form className="mt-2">
         <Form.Group className="mb-3">
           <Form.Control
             onChange={(e) => setSearch(e.target.value)}

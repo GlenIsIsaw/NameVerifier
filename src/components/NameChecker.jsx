@@ -10,19 +10,16 @@ import Loading from "./Loading";
 const NameChecker = () => {
   useEffect(() => {
     const handleContextMenu = (event) => {
-      // Prevent the default right-click menu
       event.preventDefault();
     };
 
-    // Add event listener when component mounts
-    window.addEventListener('contextmenu', handleContextMenu);
+    window.addEventListener("contextmenu", handleContextMenu);
 
-    // Remove event listener when component unmounts
     return () => {
-      window.removeEventListener('contextmenu', handleContextMenu);
+      window.removeEventListener("contextmenu", handleContextMenu);
     };
   }, []);
-  
+
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -52,7 +49,7 @@ const NameChecker = () => {
             transition={{ duration: 0.5 }}
           >
             <div className="title-page mt-5">Name Checker</div>
-            <p className="sub-page lh-base">
+            <p className="sub-page">
               The Name Checker is a simple yet powerful tool designed to verify
               your name and payout schedule. With this tool, users can input
               their personal information, primarily their name, and the
@@ -63,6 +60,12 @@ const NameChecker = () => {
               errors and discrepancies in their payout schedules. It provides
               instant feedback, indicating whether the entered name matches the
               payout schedule or if any adjustments are needed.
+            </p>
+            <p className="blinking-text fw-bold text-uppercase text-center">
+              To avoid text-scams and fake SMS regarding the Educational Assistance Program, Please check your name here.
+            </p>
+            <p className="sub-title">
+              Educational Assistance 2024 - List of Qualified Students
             </p>
           </motion.div>
           <FloatingButton />

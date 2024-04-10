@@ -19,9 +19,9 @@ const Footer = () => {
           <Link to="/Faq" className="text-decoration-none">
             <li className="nav-item nav-link px-2 text-body-secondary">FAQs</li>
           </Link>
-          <Link to="/Check" className="text-decoration-none">
+          <Link to="/NameChecker" className="text-decoration-none">
             <li className="nav-item nav-link px-2 text-body-secondary">
-              Verify Now
+              Check My Name
             </li>
           </Link>
         </ul>

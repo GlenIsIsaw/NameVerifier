@@ -61,6 +61,10 @@ const Faq = () => {
             convenient means for constituents to ensure that their information
             is correctly recorded and utilized for appropriate governmental
             procedures.
+            <br />
+            <br />
+            <strong className="text-uppercase text-danger">
+            This also to avoid text-scams and fake SMS for the sake of Educational Assistance Program</strong>
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="2">
