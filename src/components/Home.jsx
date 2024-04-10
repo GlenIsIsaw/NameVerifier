@@ -16,7 +16,7 @@ const Home = () => {
     <div className="App">
       <Container>
         <img
-          src="./images/HeroBanner.webp"
+          src="./images/434710789_397046489771087_755026096533509737_n.webp"
           className="img-fluid"
           alt="Padagos Lang"
           loading="lazy"
@@ -24,8 +24,8 @@ const Home = () => {
 
         <div className="clearfix mt-4">
           <img
-            src="./images/CongRoseMarie.webp"
-            className="col-md-4 float-md-end ms-md-3 img-fluid  image"
+            src="./images/434710789_397046489771087_7550260965335097355_n2.webp"
+            className="col-md-4 float-md-end ms-md-3 img-fluid"
             alt="Congresswoman Rosemarie Conejos Panotes"
             data-aos="fade-left"
             loading="lazy"

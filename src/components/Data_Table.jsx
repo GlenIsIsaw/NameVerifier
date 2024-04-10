@@ -20,6 +20,7 @@ const Data_Table = () => {
         <thead>
           <tr>
             <th className="text-start">First Name</th>
+            <th className="text-start">Middle Name</th>
             <th className="text-start">Last Name</th>
             <th className="text-center">Date Schedule</th>
             <th className="text-center">Venue</th>
@@ -27,17 +28,22 @@ const Data_Table = () => {
         </thead>
         <tbody>
           {data
-            .filter((item) => {
-              return search.toLowerCase() === ""
-                ? item
-                : item.first_name.toLowerCase().includes(search);
-            })
+            .filter(
+              (item) =>
+                item.first_name.toLowerCase().includes(search.toLowerCase()) ||
+                item.last_name.toLowerCase().includes(search.toLowerCase())
+            )
             .map((item) => (
               <tr key={item.id}>
                 <td className="text-start text-capitalize">
                   {item.first_name}
                 </td>
-                <td className="text-start text-uppercase">{item.last_name}</td>
+                <td className="text-start text-capitalize">
+                  {item.middle_name}
+                </td>
+                <td className="text-start text-capitalize fw-bold text-success">
+                  {item.last_name}
+                </td>
                 <td className="text-center text-capitalize text-success fw-bold">
                   {item.date}
                 </td>
