@@ -8,6 +8,21 @@ import FloatingButton from "./FloatingButton";
 import Loading from "./Loading";
 
 const NameChecker = () => {
+  useEffect(() => {
+    const handleContextMenu = (event) => {
+      // Prevent the default right-click menu
+      event.preventDefault();
+    };
+
+    // Add event listener when component mounts
+    window.addEventListener('contextmenu', handleContextMenu);
+
+    // Remove event listener when component unmounts
+    return () => {
+      window.removeEventListener('contextmenu', handleContextMenu);
+    };
+  }, []);
+  
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
