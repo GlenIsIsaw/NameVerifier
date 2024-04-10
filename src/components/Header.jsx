@@ -13,7 +13,7 @@ function Header() {
         <Link to="/">
           <img
             alt=""
-            src="/images/LogoPadagosLang.webp"
+            src="/images/435311166_396549496487453_1076776077106079376_n.webp"
             width="200"
             height="50"
             className="d-inline-block align-top"

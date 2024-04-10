@@ -16,6 +16,10 @@ const About = () => {
     AOS.init({ duration: 2000 });
   }, []);
 
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
   return (
     <Container className="mt-5">
       <motion.div
