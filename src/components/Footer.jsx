@@ -28,7 +28,7 @@ const Footer = () => {
         <p className="text-center text-body-secondary">
           &copy; 2024{" "}
           <span className="text-uppercase footer-font">
-            Powered and Developed by Glen Pabico
+            Powered and Developed by Glen
           </span>
         </p>
       </footer>
