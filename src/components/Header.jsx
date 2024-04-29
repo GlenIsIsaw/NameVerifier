@@ -1,9 +1,13 @@
 import React from "react";
 import "../styles/Header.css";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import Button from "react-bootstrap/Button";
+import {
+  Container,
+  Navbar,
+  Nav,
+  Button,
+  OverlayTrigger,
+  Tooltip
+} from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 function Header() {
@@ -35,12 +39,24 @@ function Header() {
             <Link to="/Faq" className="text-decoration-none">
               <li className="text-uppercase mx-3 py-2 link-font">FAQs</li>
             </Link>
-            <Button
-              href="/NameChecker"
-              variant="outline-success text-uppercase fw-bold mx-3"
+
+            <OverlayTrigger
+              placement="bottom"
+              overlay={
+                <Tooltip id={`tooltip-disabled`}>Not Available Right Now</Tooltip>
+              }
+       
             >
-              Check My Name
-            </Button>{" "}
+               <span className="d-inline-block">
+              <Button
+                href="/NameChecker"
+                variant="outline-success text-uppercase fw-bold mx-3"
+                disabled
+              >
+                Educational Assistance
+              </Button>
+              </span>
+            </OverlayTrigger>
           </Nav>
         </Navbar.Collapse>
       </Container>

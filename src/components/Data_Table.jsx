@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Table, Form, Col, Row } from "react-bootstrap";
-import { data } from "../Data/data.js";
+import { Table, Form } from "react-bootstrap";
+import { data } from "../data/data.js";
 
 const Data_Table = () => {
   const [search, setSearch] = useState("");

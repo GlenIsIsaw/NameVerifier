@@ -6,8 +6,19 @@ import "../styles/Check.css";
 import { motion } from "framer-motion";
 import FloatingButton from "./FloatingButton";
 import Loading from "./Loading";
+import Maintenance from "./Maintenance";
 
 const NameChecker = () => {
+  
+  const [maintenanceMode, setMaintenanceMode] = useState(false);
+
+ 
+  useEffect(() => {
+   
+    const isMaintenance = true; 
+    setMaintenanceMode(isMaintenance);
+  }, []);
+
   useEffect(() => {
     const handleContextMenu = (event) => {
       event.preventDefault();
@@ -38,7 +49,9 @@ const NameChecker = () => {
 
   return (
     <div>
-      {loading ? (
+      {maintenanceMode ? (
+        <Maintenance />
+      ) : loading ? (
         <Loading />
       ) : (
         <Container>
