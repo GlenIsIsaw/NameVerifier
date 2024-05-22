@@ -1,21 +1,19 @@
 import React, { useState, useEffect } from "react";
-import { Container } from "react-bootstrap";
-import Data_Table from "./Data_Table";
+import { Container, Button } from "react-bootstrap";
+import Data_Update from "./Data_Update";
 import DataModal from "./DataModal";
 import "../styles/Check.css";
 import { motion } from "framer-motion";
 import FloatingButton from "./FloatingButton";
 import Loading from "./Loading";
 import Maintenance from "./Maintenance";
+import { Link } from "react-router-dom";
 
-const NameChecker = () => {
-  
+const Update = () => {
   const [maintenanceMode, setMaintenanceMode] = useState(false);
 
- 
   useEffect(() => {
-   
-    const isMaintenance = false; 
+    const isMaintenance = false;
     setMaintenanceMode(isMaintenance);
   }, []);
 
@@ -61,32 +59,28 @@ const NameChecker = () => {
             animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
             transition={{ duration: 0.5 }}
           >
-            <div className="title-page mt-5">Name Checker</div>
-            <p className="sub-page">
-              The Name Checker is a simple yet powerful tool designed to verify
-              your name and payout schedule. With this tool, users can input
-              their personal information, primarily their name, and the
-              corresponding payout schedule they expect. The tool then
-              cross-references this information against predetermined criteria
-              to ensure accuracy and validity. By leveraging advanced algorithms
-              and validation techniques, the Name Checker helps users avoid
-              errors and discrepancies in their payout schedules. It provides
-              instant feedback, indicating whether the entered name matches the
-              payout schedule or if any adjustments are needed.
+            <div className="title-page mt-5">ONE LAST CALL</div>
+            <p className="text-center fs-6">
+              This is the last call for those student beneficiaries that wasn't
+              able to claim the educational cash assistance last{" "}
+              <strong>April 15 - 26, 2024</strong> <br /> if you already claimed
+              your educational assistance, please disregard the list or if you do
+              not see your name; please click the original link <Link to="/NameChecker" className="text-decoration-underline">here</Link> or <Link to="/NameChecker" className="text-decoration-underline">educational assistance webpage</Link> 
             </p>
             <p className="blinking-text fw-bold text-uppercase text-center">
-              To avoid text-scams and fake SMS regarding the Educational Assistance Program, Please check your name here.
+              To avoid text-scams and fake SMS regarding the Educational
+              Assistance Program, Please check your name here.
             </p>
             <p className="sub-title">
               Educational Assistance 2024 - List of Qualified Students
             </p>
           </motion.div>
           <FloatingButton />
-          <Data_Table />
+          <Data_Update />
         </Container>
       )}
     </div>
   );
 };
 
-export default NameChecker;
+export default Update;
