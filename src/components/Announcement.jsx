@@ -11,16 +11,15 @@ const announcement = () => {
         <Card>
           <Card.Body>
             <Card.Title className="text-uppercase fw-bold">
-              Educational Assistance 2024 Result
+              Educational Assistance A.Y 2024 - 2025 
             </Card.Title>
             <Card.Text>
-              The result of crossmatching and validation are out! Check your
-              names now!
+              The application for the Educational Assistance A.Y 2024-2025 is now available!
             </Card.Text>
             <Button
               variant="success"
               className="text-uppercase fw-bold"
-              href="/Check"
+              href="/NameChecker"
             >
               See more
             </Button>
@@ -31,17 +30,17 @@ const announcement = () => {
         <Card>
           <Card.Body>
             <Card.Title className="text-uppercase fw-bold">
-              bantayong festival 2024
+              Pinyasan Festival 2024
             </Card.Title>
             <Card.Text>
-              Bantayog Festival is here! Come and enjoy at Camarines Norte.
+              Daet Pinyasan Festival 2024 is full of joy and fun!
             </Card.Text>
             <Button
               variant="success"
               className="text-uppercase fw-bold"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://www.facebook.com/LoveCamNorte/posts/pfbid02wdX9FBKw5ijZCjUhdCQyhoF3uUnCPXJciUdHEyHF4GSEdvMA2WqYR651CAmQBS8Ml"
+              href="https://www.facebook.com/photo/?fbid=448285921313810&set=pcb.448288254646910"
             >
               See more
             </Button>

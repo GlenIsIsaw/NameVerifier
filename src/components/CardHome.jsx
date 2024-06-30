@@ -61,22 +61,22 @@ const CardHome = () => {
                 <Card.Img
                   variant="top"
                   className="img-size"
-                  src="./images/434710789_397046489771087_7550260965335097355_n.webp"
+                  src="./images/443714050_426431533499249_6223413341532710554_n.webp"
                   loading="lazy"
                 />
               </motion.div>
               <Card.Body>
                 <Card.Title className="card-title-text fw-bold">
-                  Heat Stroke
+                  Barangay Visitation
                 </Card.Title>
                 <Card.Text>
-                  Talaga nga namang summer na dito sa ating bayan ng Camarines
-                  Norte! Kaya naman para makaiwas sa heat stroke.
+                  Ang barangay visitation ay sinimulan pa po ng aking mga
+                  magulang, at dagos-dagos pa rin hanggang sa ngayon. 
                 </Card.Text>
                 <Button
                   variant="success"
                   className="text-uppercase fw-bold shadow-lg"
-                  href="https://www.facebook.com/photo/?fbid=397046493104420&set=a.361228380019565"
+                  href="https://www.facebook.com/photo/?fbid=426432660165803&set=pcb.426441506831585"
                 >
                   See more
                 </Button>
@@ -96,23 +96,23 @@ const CardHome = () => {
                 <Card.Img
                   variant="top"
                   className="img-size"
-                  src="./images/435311166_396549496487453_107677607710607934_n.webp"
+                  src="./images/445413850_430025096473226_2794847254046351614_n.webp"
                   loading="lazy"
                 />
               </motion.div>
               <Card.Body>
                 <Card.Title className="card-title-text fw-bold">
-                  ph cares medical mission
+                  Serbisyong Padagos Lang!
                 </Card.Title>
                 <Card.Text className="card-text">
-                  Padagos lang po tayo sa paghubog sa ating mga kabataan na
-                  laging maging handa at magmalasakit para sa kanilang
-                  pamayanan.
+                  Abot-kamay at ramdam na serbisyo—ito ang tatak ng paglilingkod
+                  na ipinasa sa akin ng mga magulang ko at padagos na inihahatid
+                  sa Segundo Distrito. Padagos lang po tayo! 💚
                 </Card.Text>
                 <Button
                   variant="success"
                   className="text-uppercase fw-bold shadow-lg"
-                  href="https://www.facebook.com/photo/?fbid=396549499820786&set=pcb.396551439820592"
+                  href="https://www.facebook.com/photo/?fbid=445773194898416&set=a.215754907900247"
                 >
                   See more
                 </Button>

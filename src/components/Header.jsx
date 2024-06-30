@@ -43,7 +43,7 @@ function Header() {
             <OverlayTrigger
               placement="bottom"
               overlay={
-                <Tooltip id={`tooltip-disabled`}>Not Available Right Now</Tooltip>
+                <Tooltip id={`tooltip-disabled`}>Educational Assistance</Tooltip>
               }
        
             >
@@ -51,7 +51,7 @@ function Header() {
               <Button
                 href="/NameChecker"
                 variant="outline-success text-uppercase fw-bold mx-3"
-                disabled
+               
               >
                 Educational Assistance
               </Button>
