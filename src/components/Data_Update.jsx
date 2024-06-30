@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Table, Form } from "react-bootstrap";
-import { update } from "../data/update.js";
+import { update } from "../Data/update.js";
 
 const Data_Update = () => {
   const [search, setSearch] = useState("");
