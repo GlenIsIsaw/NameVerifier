@@ -6,7 +6,7 @@ import {
   Nav,
   Button,
   OverlayTrigger,
-  Tooltip
+  Tooltip,
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
@@ -43,18 +43,18 @@ function Header() {
             <OverlayTrigger
               placement="bottom"
               overlay={
-                <Tooltip id={`tooltip-disabled`}>Educational Assistance</Tooltip>
+                <Tooltip id={`tooltip-disabled`}>
+                  Educational Assistance
+                </Tooltip>
               }
-       
             >
-               <span className="d-inline-block">
-              <Button
-                href="/NameChecker"
-                variant="outline-success text-uppercase fw-bold mx-3"
-               
-              >
-                Educational Assistance
-              </Button>
+              <span className="d-inline-block">
+                <Button
+                  href="/NameChecker"
+                  variant="outline-success text-uppercase fw-bold mx-3"
+                >
+                  Educational Assistance
+                </Button>
               </span>
             </OverlayTrigger>
           </Nav>
