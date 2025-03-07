@@ -14,13 +14,14 @@ const Home = () => {
   }, []);
   return (
     <div className="App">
-      <Container>
-        <img
-          src="./images/434710789_397046489771087_755026096533509737_n.webp"
+          <img
+          src="./images/434710789_397046489771087_7550260965335097371_n_enhanced.webp"
           className="img-fluid"
           alt="Padagos Lang"
           loading="lazy"
         />
+      <Container>
+    
 
         <div className="clearfix mt-4">
           <img

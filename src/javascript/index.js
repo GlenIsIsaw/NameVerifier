@@ -1,3 +1,5 @@
+export { default as Akap } from "../components/Akap";
+export { default as Group_Buttons } from "../components/schedule-buttons/Group_Buttons";
 export { default as Header } from "../components/Header";
 export { default as Home } from "../components/Home";
 export { default as About } from "../components/About";
@@ -14,3 +16,8 @@ export { default as FloatingButton } from "../components/FloatingButton";
 export { default as Loading } from "../components/Loading";
 export { default as WrongLink } from "../components/WrongLink";
 export { default as Update } from "../components/Update";
+export { default as FirstDay } from "../components/schedule-names/FirstDay";
+export { default as SecondDay } from "../components/schedule-names/SecondDay";
+export { default as ThirdDay } from "../components/schedule-names/ThirdDay";
+export { default as FourthDay } from "../components/schedule-names/FourthDay";
+export { default as PopCard } from "../components/PopCard";

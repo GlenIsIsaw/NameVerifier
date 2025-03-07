@@ -3,7 +3,6 @@ import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 
-
 const announcement = () => {
   return (
     <Container>
@@ -11,11 +10,10 @@ const announcement = () => {
         <Card>
           <Card.Body>
             <Card.Title className="text-uppercase fw-bold">
-              Educational Assistance 2024 Result
+              Educational Assistance 2025 Result
             </Card.Title>
             <Card.Text>
-              The result of crossmatching and validation are out! Check your
-              names now!
+              Coming soon.
             </Card.Text>
             <Button
               variant="success"
@@ -31,7 +29,7 @@ const announcement = () => {
         <Card>
           <Card.Body>
             <Card.Title className="text-uppercase fw-bold">
-              bantayong festival 2024
+              bantayong festival 2025
             </Card.Title>
             <Card.Text>
               Bantayog Festival is here! Come and enjoy at Camarines Norte.
@@ -52,22 +50,21 @@ const announcement = () => {
         <Card>
           <Card.Body>
             <Card.Title className="text-uppercase fw-bold">
-              Ussap Caravan
+              RSCUAA 2025
             </Card.Title>
             <Card.Text>
-              Kasama po sina Gov. Dong Padilla, kaniyang anak na si Anica
-              Padilla, at Vice Gov. Engr. Joseph Villaverde Ascutia, padagos po
-              tayong nagsagawa ng USSAP sa mga bayan ng San Vicente, Talisay, at
-              Vinzons. Ito po ay para masiguro ang Alay sa Diyos at Alay sa
-              Bayan na Padagos na serbisyo para sa bawat CamNorteño. 💚
-              #PadagosLang
+              Buo po ang ating suporta sa ating mga atleta mula sa Camarines
+              Norte State College para sa kanilang pagsabak sa regional
+              competition bitbit ang dangal at talento ng mga CamNorteño. <br /> <br />
+              Padagos lang! 💪🏻 <br /> <br /> #PadagosLang <br />
+              #siROSEMARIEangPANOTESko
             </Card.Text>
             <Button
               variant="success"
               className="text-uppercase fw-bold"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://www.facebook.com/Congwrosemarie/posts/pfbid02cdGE2tRitbJxLoR2RrN9oLZpr4959tbDYt6W1wrgfBP82ojKb7tQ9BrTQT2wnTZRl"
+              href="https://www.facebook.com/Congwrosemarie/posts/pfbid02K64Kst45s7dBsk8mMKNa8kj3oxcEYuAym8yjBLic86Nj4siEnSs1v8dzXU4BVSZl"
             >
               See more
             </Button>

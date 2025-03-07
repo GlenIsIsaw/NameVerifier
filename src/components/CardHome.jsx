@@ -61,22 +61,23 @@ const CardHome = () => {
                 <Card.Img
                   variant="top"
                   className="img-size"
-                  src="./images/434710789_397046489771087_7550260965335097355_n.webp"
+                  src="./images/480471160_607343815408019_7713107544049122264_n.webp"
                   loading="lazy"
                 />
               </motion.div>
               <Card.Body>
                 <Card.Title className="card-title-text fw-bold">
-                  Heat Stroke
+                  Barangay Visitation
                 </Card.Title>
                 <Card.Text>
-                  Talaga nga namang summer na dito sa ating bayan ng Camarines
-                  Norte! Kaya naman para makaiwas sa heat stroke.
+                  Maraming salamat po sa inyong mainit na pagtanggap sa inyong
+                  lingkod at padagos na pagsuporta sa ating Barangay Visitation
+                  program mula noon, hanggang ngayon.
                 </Card.Text>
                 <Button
                   variant="success"
                   className="text-uppercase fw-bold shadow-lg"
-                  href="https://www.facebook.com/photo/?fbid=397046493104420&set=a.361228380019565"
+                  href="https://www.facebook.com/photo/?fbid=607343808741353&set=a.361228380019565"
                 >
                   See more
                 </Button>
@@ -96,23 +97,23 @@ const CardHome = () => {
                 <Card.Img
                   variant="top"
                   className="img-size"
-                  src="./images/435311166_396549496487453_107677607710607934_n.webp"
+                  src="./images/481127049_612614978214236_1905674662345404496_n.webp"
                   loading="lazy"
                 />
               </motion.div>
               <Card.Body>
                 <Card.Title className="card-title-text fw-bold">
-                  ph cares medical mission
+                  Number 3 sa balota. 💚
                 </Card.Title>
                 <Card.Text className="card-text">
-                  Padagos lang po tayo sa paghubog sa ating mga kabataan na
-                  laging maging handa at magmalasakit para sa kanilang
-                  pamayanan.
+                  Para sa PADAGOS na SERBISYONG PANOTES sa Ikalawang Distrito ng
+                  Camarines Norte. TUNAY at TOTOO. Mula NOON hanggang NGAYON.
+                  Padagos lang po tayo!
                 </Card.Text>
                 <Button
                   variant="success"
                   className="text-uppercase fw-bold shadow-lg"
-                  href="https://www.facebook.com/photo/?fbid=396549499820786&set=pcb.396551439820592"
+                  href="https://www.facebook.com/photo/?fbid=612614971547570&set=a.215754907900247"
                 >
                   See more
                 </Button>

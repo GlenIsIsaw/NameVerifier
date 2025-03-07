@@ -12,7 +12,7 @@ const Maintenance = () => {
         Sorry, this page is not Available right now
       </div>
       <p className="text-center fs-6 mt-2 mx-3">
-        For more details about the educational assistance; please visit our
+        For more details about the financial assistance; please visit our
         office at <span className="text-success"> 2nd Legeslative Office, 2nd Floor, Provincial Capitol, Daet,
         Camarines Norte 4600 </span>
       </p>

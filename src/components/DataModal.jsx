@@ -6,12 +6,10 @@ const DataModal = () => {
   const [showModal, setShowModal] = useState(true);
 
   useEffect(() => {
-    // Hide modal after some time (e.g., 3 seconds)
     const timeout = setTimeout(() => {
       setShowModal(false);
     }, 120000);
 
-    // Clear timeout on component unmount
     return () => clearTimeout(timeout);
   }, []);
 
@@ -44,7 +42,7 @@ const DataModal = () => {
       <Modal.Footer>
         <button
           type="button"
-          className="btn btn-primary"
+          className="btn btn-success mx-auto"
           onClick={() => setShowModal(false)}
         >
           I Understand

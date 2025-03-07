@@ -1,31 +1,44 @@
-import React, { useState } from "react";
-import "../styles/FloatingButton.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faNoteSticky } from "@fortawesome/free-solid-svg-icons";
-import { Button, Modal, OverlayTrigger, Tooltip } from "react-bootstrap";
+import React, { useState, useEffect } from "react";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
+import "../styles/Check.css";
 
-const FloatingButton = () => {
-  const [showModal, setShowModal] = useState(false);
+const PopCard = () => {
+  const [showModal, setShowModal] = useState(true);
+  const [isCloseEnabled, setIsCloseEnabled] = useState(false);
+  const [countdown, setCountdown] = useState(60);
 
-  const handleModalOpen = () => setShowModal(true);
-  const handleModalClose = () => setShowModal(false);
+  useEffect(() => {
+    const countdownInterval = setInterval(() => {
+      setCountdown((prevCountdown) => {
+        if (prevCountdown <= 1) {
+          clearInterval(countdownInterval);
+          setIsCloseEnabled(true);
+          return 0;
+        }
+        return prevCountdown - 1;
+      });
+    }, 1000);
+
+    return () => clearInterval(countdownInterval);
+  }, []);
+
+  const handleModalClose = () => {
+    if (isCloseEnabled) {
+      setShowModal(false);
+    }
+  };
 
   return (
     <div>
-      <OverlayTrigger
-        key="tooltip"
-        placement="left"
-        overlay={
-          <Tooltip id={`tooltip-left`}>Documentary Requirements</Tooltip>
-        }
+      <Modal
+        className="mx-auto"
+        show={showModal}
+        onHide={handleModalClose}
+        backdrop="static"
+        keyboard={false}
       >
-        <button className="floating-button" onClick={handleModalOpen}>
-          <FontAwesomeIcon icon={faNoteSticky} />
-        </button>
-      </OverlayTrigger>
-
-      <Modal className="mx-auto" show={showModal} onHide={handleModalClose}>
-        <Modal.Header closeButton>
+        <Modal.Header>
           <Modal.Title className="fw-bold text-uppercase">
             Documentary Requirements
           </Modal.Title>
@@ -75,19 +88,12 @@ const FloatingButton = () => {
             schedule. However, they cannot claim their assistance before the
             originally assigned schedule. <br />
             <br />
-            We also regret to inform you that,{" "}
-            <strong className="text-danger text-capitalize">
-              due to the new format of the DSWD master list{" "}
-            </strong>
-            , students who are unable to personally claim their assistance
-            during any of the designated offsite payout schedules
-            <strong className="text-danger text-capitalize">
-              {" "}
-              will not be allowed{" "}
-            </strong>
-            to authorize a representative until further notice. This will result
-            in a re-validation and cross-matching process for guardians who wish
-            to act as authorized claimants.
+            We also regret to inform you that, <strong className="text-danger text-capitalize">due to the new format of the DSWD
+            master list </strong>, students who are unable to personally claim their
+            assistance during any of the designated offsite payout schedules
+            <strong className="text-danger text-capitalize"> will not be allowed </strong>to authorize a representative until further
+            notice. This will result in a re-validation and cross-matching
+            process for guardians who wish to act as authorized claimants.
           </p>
           <p className="modal-text fw-bold text-success">
             You may see the OFFICIAL LIST OF NAMES for your schedule at 2nd
@@ -104,9 +110,19 @@ const FloatingButton = () => {
             Thank you and Congratulations.
           </p>
         </Modal.Body>
+        <Modal.Footer>
+          <Button
+            variant="success"
+            className="mx-auto d-block"
+            onClick={handleModalClose}
+            disabled={!isCloseEnabled}
+          >
+            {isCloseEnabled ? "I Understand" : `Please Read... ${countdown}s`}
+          </Button>
+        </Modal.Footer>
       </Modal>
     </div>
   );
 };
 
-export default FloatingButton;
+export default PopCard;

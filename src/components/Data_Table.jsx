@@ -6,7 +6,8 @@ const Data_Table = () => {
   const [search, setSearch] = useState("");
 
   return (
-    <div>
+       <div>
+    
       <Form className="mt-2">
         <Form.Group className="mb-3">
           <Form.Control
@@ -55,6 +56,7 @@ const Data_Table = () => {
         </tbody>
       </Table>
     </div>
+    
   );
 };
 

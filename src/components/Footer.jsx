@@ -19,16 +19,18 @@ const Footer = () => {
           <Link to="/Faq" className="text-decoration-none">
             <li className="nav-item nav-link px-2 text-body-secondary">FAQs</li>
           </Link>
+           {/*
           <Link to="/NameChecker" className="text-decoration-none">
             <li className="nav-item nav-link px-2 text-body-secondary">
               Check My Name
             </li>
           </Link>
+          */}
         </ul>
         <p className="text-center text-body-secondary">
-          &copy; 2024{" "}
+          &copy; 2025{" "}
           <span className="text-uppercase footer-font">
-            Powered and Developed by Glen
+            Developed by Glen
           </span>
         </p>
       </footer>

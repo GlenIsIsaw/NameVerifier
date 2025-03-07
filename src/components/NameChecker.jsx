@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Container } from "react-bootstrap";
-import Data_Table from "./Data_Table";
+import Group_Buttons from "./schedule-buttons/Group_Buttons";
 import DataModal from "./DataModal";
 import "../styles/Check.css";
 import { motion } from "framer-motion";
-import FloatingButton from "./FloatingButton";
 import Loading from "./Loading";
 import Maintenance from "./Maintenance";
 
@@ -61,9 +60,9 @@ const NameChecker = () => {
             animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
             transition={{ duration: 0.5 }}
           >
-            <div className="title-page mt-5">Name Checker</div>
+            <div className="title-page mt-2">Name Checker</div>
             <p className="sub-page">
-              The Name Checker is a simple yet powerful tool designed to verify
+              The Schedule Checker is a simple yet powerful tool designed to verify
               your name and payout schedule. With this tool, users can input
               their personal information, primarily their name, and the
               corresponding payout schedule they expect. The tool then
@@ -75,14 +74,16 @@ const NameChecker = () => {
               payout schedule or if any adjustments are needed.
             </p>
             <p className="blinking-text fw-bold text-uppercase text-center">
-              To avoid text-scams and fake SMS regarding the Educational Assistance Program, Please check your name here.
+              To avoid text-scams and fake SMS regarding the Educational Assistance Program, Please check your schedule here.
             </p>
-            <p className="sub-title">
-              Educational Assistance 2024 - List of Qualified Students
+            <p className="sub-title mb-5">
+              Educational Assistance 2025 - List of Schedules
             </p>
           </motion.div>
-          <FloatingButton />
-          <Data_Table />
+          
+          
+          <Group_Buttons/>
+              {/* <Data_Table />  */}
         </Container>
       )}
     </div>
