@@ -14,7 +14,7 @@ const NameChecker = () => {
  
   useEffect(() => {
    
-    const isMaintenance = true; 
+    const isMaintenance = false; 
     setMaintenanceMode(isMaintenance);
   }, []);
 
@@ -79,8 +79,7 @@ const NameChecker = () => {
             <p className="sub-title mb-5">
               Educational Assistance 2025 - List of Schedules
             </p>
-          </motion.div>
-          
+          </motion.div>      
           
           <Group_Buttons/>
               {/* <Data_Table />  */}
