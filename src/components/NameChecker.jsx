@@ -14,7 +14,7 @@ const NameChecker = () => {
  
   useEffect(() => {
    
-    const isMaintenance = false; 
+    const isMaintenance = true; 
     setMaintenanceMode(isMaintenance);
   }, []);
 

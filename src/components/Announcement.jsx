@@ -18,7 +18,7 @@ const announcement = () => {
             <Button
               variant="success"
               className="text-uppercase fw-bold"
-              href="/Check"
+              href="/NameChecker"
             >
               See more
             </Button>
@@ -32,14 +32,14 @@ const announcement = () => {
               bantayong festival 2025
             </Card.Title>
             <Card.Text>
-              Bantayog Festival is here! Come and enjoy at Camarines Norte.
+              Daet Pinyasan Festival 2024 is full of joy and fun!
             </Card.Text>
             <Button
               variant="success"
               className="text-uppercase fw-bold"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://www.facebook.com/LoveCamNorte/posts/pfbid02wdX9FBKw5ijZCjUhdCQyhoF3uUnCPXJciUdHEyHF4GSEdvMA2WqYR651CAmQBS8Ml"
+              href="https://www.facebook.com/photo/?fbid=448285921313810&set=pcb.448288254646910"
             >
               See more
             </Button>

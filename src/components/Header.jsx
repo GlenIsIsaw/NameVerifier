@@ -99,10 +99,24 @@ function Header() {
             {/* Educational Assistance Button 
             <OverlayTrigger
               placement="bottom"
+<<<<<<< HEAD
               overlay={<Tooltip id={`tooltip-disabled`}>Educational Assistance</Tooltip>}
             >
               <span className="d-inline-block">
                 <Button href="/NameChecker" variant="success" className="text-uppercase fw-bold px-4 shadow-sm">
+=======
+              overlay={
+                <Tooltip id={`tooltip-disabled`}>
+                  Educational Assistance
+                </Tooltip>
+              }
+            >
+              <span className="d-inline-block">
+                <Button
+                  href="/NameChecker"
+                  variant="outline-success text-uppercase fw-bold mx-3"
+                >
+>>>>>>> 025a3611cd08d93cddc4b0a1edaba791391197f8
                   Educational Assistance
                 </Button>
               </span>
