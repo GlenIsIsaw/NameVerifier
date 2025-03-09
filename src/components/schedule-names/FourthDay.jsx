@@ -5,7 +5,7 @@ import PopCard from "../PopCard";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import InputGroup from "react-bootstrap/InputGroup";
-import { fourthDay } from "../../Data/fourthDay"; // Import the actual data
+import { fourthDay } from "../../Data/fourthDay.js"; // Import the actual data
 import '../../App.css';
 
 const FourthDay = () => {
