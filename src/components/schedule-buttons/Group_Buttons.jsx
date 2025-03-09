@@ -10,35 +10,35 @@ const Group_Buttons = () => {
       <h4>
         <div className="spann sub-title">First Schedule</div>
       </h4>
-      <Button variant="success" className="custom-text" size="lg" disabled href="/FirstDay">
+      <Button variant="success" className="custom-text" size="lg" href="/FirstDay">
         March 11, 2025
       </Button>
-      <Button variant="success" className="custom-text" size="lg" disabled href="/SecondDay">
+      <Button variant="success" className="custom-text" size="lg" href="/SecondDay">
         March 12, 2025
       </Button>
-      <Button variant="success" className="custom-text" size="lg" disabled href="/ThirdDay">
+      <Button variant="success" className="custom-text" size="lg" href="/ThirdDay">
         March 13, 2025
       </Button>
-      <Button variant="success" className="custom-text" size="lg" disabled href="/FourthDay">
+      <Button variant="success" className="custom-text" size="lg" href="/FourthDay">
         March 14, 2025
       </Button>
       </div>
       
       <div className="d-grid gap-2 mt-3">
       <h4>
-        <div className="spann sub-title">Second Schedule</div>
+        <div className="spann sub-title">TBA</div>
       </h4>
       <Button variant="success" className="custom-text" size="lg" disabled>
-        March 18, 2025
+        TBA
       </Button>
       <Button variant="success" className="custom-text" size="lg" disabled>
-        March 19, 2025
+      TBA
       </Button>
       <Button variant="success" className="custom-text" size="lg" disabled>
-        March 20, 2025
+      TBA
       </Button>
       <Button variant="success" className="custom-text" size="lg" disabled>
-        March 21, 2025
+      TBA
       </Button>
     </div>
     </Container>

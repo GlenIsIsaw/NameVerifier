@@ -5,6 +5,8 @@ import PopCard from "../PopCard";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import InputGroup from "react-bootstrap/InputGroup";
+import firstDay from "../../Data/firstday"; // Import the actual data
+import '../../App.css';
 
 const FirstDay = () => {
   const [clients, setClients] = useState([]);
@@ -12,15 +14,9 @@ const FirstDay = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const clientsPerPage = 15;
 
-  // Dummy Data (500 clients)
+  // Load data on mount
   useEffect(() => {
-    const dummyClients = Array.from({ length: 500 }, (_, index) => ({
-      id: index + 1,
-      lastName: `Last${index + 1}`,
-      firstName: `First${index + 1}`,
-      middleName: `M${index + 1}`,
-    }));
-    setClients(dummyClients);
+    setClients(firstDay);
   }, []);
 
   // Filter clients based on search input
@@ -39,12 +35,10 @@ const FirstDay = () => {
   );
   const totalPages = Math.ceil(filteredClients.length / clientsPerPage);
 
-  // Function to handle pagination logic (responsive pagination)
   const renderPaginationItems = () => {
     const paginationItems = [];
 
     if (totalPages <= 5) {
-      // Show all pages if there are 5 or fewer
       for (let i = 1; i <= totalPages; i++) {
         paginationItems.push(
           <Pagination.Item
@@ -57,7 +51,6 @@ const FirstDay = () => {
         );
       }
     } else {
-      // Always show first page
       paginationItems.push(
         <Pagination.Item
           key={1}
@@ -74,7 +67,6 @@ const FirstDay = () => {
         );
       }
 
-      // Show current page, previous and next
       let startPage = Math.max(2, currentPage - 1);
       let endPage = Math.min(totalPages - 1, currentPage + 1);
 
@@ -96,7 +88,6 @@ const FirstDay = () => {
         );
       }
 
-      // Always show last page
       paginationItems.push(
         <Pagination.Item
           key={totalPages}
@@ -113,19 +104,27 @@ const FirstDay = () => {
 
   return (
     <Container className="mt-4">
-      <h2 className="text-center mb-3 text-uppercase fw-bold">
+      <p className="text-center mb-3 text-uppercase fw-bold schedule-text fs-3">
         March 11, 2025
-      </h2>
+        <br />
+        <span className="fs-6 fw-semibold text-success">Date</span>
+      </p>
+
+      <p className="text-center mb-3 text-uppercase fw-bold schedule-sub-text fs-3">
+        BARANGAY II Covered Court ( Daet )
+        <br />
+        <span className="fs-6 fw-semibold text-success">Venue</span>
+      </p>
+     
 
       {/* Search Input */}
-
       <InputGroup className="mb-3 border border-success border-3 rounded-2">
         <InputGroup.Text id="basic-addon1">
           <FontAwesomeIcon icon={faSearch} />
         </InputGroup.Text>
         <Form.Control
           type="text"
-          placeholder="Search Clients..."
+          placeholder="Search Your Name Here..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
@@ -146,9 +145,9 @@ const FirstDay = () => {
             currentClients.map((client, index) => (
               <tr key={client.id}>
                 <td>{indexOfFirstClient + index + 1}</td>
-                <td>{client.lastName}</td>
-                <td>{client.firstName}</td>
-                <td>{client.middleName}</td>
+                <td className="text-uppercase">{client.last_Name}</td>
+                <td className="text-uppercase">{client.first_Name}</td>
+                <td className="text-uppercase">{client.middle_Name}</td>
               </tr>
             ))
           ) : (

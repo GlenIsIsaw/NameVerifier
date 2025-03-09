@@ -88,12 +88,24 @@ const PopCard = () => {
             schedule. However, they cannot claim their assistance before the
             originally assigned schedule. <br />
             <br />
-            We also regret to inform you that, <strong className="text-danger text-capitalize">due to the new format of the DSWD
-            master list </strong>, students who are unable to personally claim their
-            assistance during any of the designated offsite payout schedules
-            <strong className="text-danger text-capitalize"> will not be allowed </strong>to authorize a representative until further
-            notice. This will result in a re-validation and cross-matching
-            process for guardians who wish to act as authorized claimants.
+            We also regret to inform you that,{" "}
+            <strong className="text-danger text-capitalize">
+              due to the new format of the DSWD master list{" "}
+            </strong>
+            , students who are unable to personally claim their assistance
+            during any of the designated offsite payout schedules
+            <strong className="text-danger text-capitalize">
+              {" "}
+              will not be allowed{" "}
+            </strong>
+            to authorize a representative until further notice. This will result
+            in a re-validation and cross-matching process for guardians who wish
+            to act as authorized claimants.
+          </p>
+          <p className="modal-text fw-bold text-success">
+            For everyone's health and safety, we strongly discourage students
+            from camping at the venue, staying overnight, or queuing earlier
+            than 6:00 AM.
           </p>
           <p className="modal-text fw-bold text-success">
             You may see the OFFICIAL LIST OF NAMES for your schedule at 2nd
