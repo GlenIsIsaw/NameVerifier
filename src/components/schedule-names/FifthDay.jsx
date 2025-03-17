@@ -119,7 +119,7 @@ const FifthDay = () => {
       </p>
 
       <p className="text-center mb-3 text-uppercase fw-bold schedule-sub-text fs-3">
-        BARANGAY Camambugan Covered Court ( Daet )
+        Greenview Subdivision Covered Court ( Camambugan, Daet )
         <br />
         <span className="fs-6 fw-semibold text-success">Venue</span>
       </p>
