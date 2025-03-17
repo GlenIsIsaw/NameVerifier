@@ -14,6 +14,9 @@ import {
   SecondDay,
   ThirdDay,
   FourthDay,
+  FifthDay,
+  SixthDay,
+  SeventhDay,
 } from "./javascript";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Route, Routes } from "react-router-dom";
@@ -42,6 +45,9 @@ function App() {
               <Route path="/SecondDay" element={<SecondDay />} />
               <Route path="/ThirdDay" element={<ThirdDay />} />
               <Route path="/FourthDay" element={<FourthDay />} />
+              <Route path="/FifthDay" element={<FifthDay />} />
+              <Route path="/SixthDay" element={<SixthDay />} />
+              <Route path="/SeventhDay" element={<SeventhDay />} />
             </Routes>
             <Footer />
           </div>

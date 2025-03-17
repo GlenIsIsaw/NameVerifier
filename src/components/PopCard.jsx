@@ -6,7 +6,7 @@ import "../styles/Check.css";
 const PopCard = () => {
   const [showModal, setShowModal] = useState(true);
   const [isCloseEnabled, setIsCloseEnabled] = useState(false);
-  const [countdown, setCountdown] = useState(60);
+  const [countdown, setCountdown] = useState(10);
 
   useEffect(() => {
     const countdownInterval = setInterval(() => {
