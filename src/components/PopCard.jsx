@@ -50,7 +50,7 @@ const PopCard = () => {
           </p>
           <ol className="list-group mt-3 border border-2 border-dark list-group-numbered">
             <li className="list-group-item border border-2 border-dark modal-text">
-              Back to back Photocopy of School ID validated by the Registrar and
+             (2) Back to back Photocopy of School ID validated by the Registrar and
               must be <strong>CERTIFIED TRUE COPY </strong> for{" "}
               <strong>(2nd) Second Semester, Academic Year 2024-2025.</strong>
             </li>

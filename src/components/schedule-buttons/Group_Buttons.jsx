@@ -28,17 +28,17 @@ const Group_Buttons = () => {
       <h4>
         <div className="spann sub-title">Second Schedule</div>
       </h4>
-      <Button variant="success" className="custom-text" size="lg" href="/FifthDay">
+      <Button variant="success" className="custom-text" size="lg" href="/FifthDay" disabled>
         March 18, 2025 | 8:00 AM - 5:00 PM ONLY
       </Button>
-      <Button variant="success" className="custom-text" size="lg" href="/SixthDay">
+      <Button variant="success" className="custom-text" size="lg" href="/SixthDay" disabled>
       March 19, 2025 | 8:00 AM - 5:00 PM ONLY
       </Button>
       <Button variant="success" className="custom-text" size="lg" href="/SeventhDay">
       March 20, 2025 | 8:00 AM - 5:00 PM ONLY
       </Button>
-      <Button variant="success" className="custom-text" size="lg" disabled>
-      TBA
+      <Button variant="success" className="custom-text" size="lg" href="/EightDay">
+      March 21, 2025 | 8:00 AM - 5:00 PM ONLY
       </Button>
     </div>
     </Container>
