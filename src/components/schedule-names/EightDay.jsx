@@ -113,13 +113,13 @@ const EighthDay = () => {
   return (
     <Container className="mt-4">
       <p className="text-center mb-3 text-uppercase fw-bold schedule-text fs-3">
-        March 20, 2025 | 8:00 AM - 5:00 PM
+        March 21, 2025 | 8:00 AM - 5:00 PM
         <br />
         <span className="fs-6 fw-semibold text-success">Date</span>
       </p>
 
       <p className="text-center mb-3 text-uppercase fw-bold schedule-sub-text fs-3">
-        BARANGAY Camambugan Covered Court ( Daet )
+      Greenview Subdivision Covered Court ( Camambugan, Daet )
         <br />
         <span className="fs-6 fw-semibold text-success">Venue</span>
       </p>

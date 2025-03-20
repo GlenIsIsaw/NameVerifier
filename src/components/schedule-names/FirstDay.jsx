@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Table, Form, Pagination, Container } from "react-bootstrap";
+import { Table, Form, Pagination, Container, Alert } from "react-bootstrap";
 import FloatingButton from "../FloatingButton";
 import PopCard from "../PopCard";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
@@ -12,12 +12,23 @@ const FirstDay = () => {
   const [clients, setClients] = useState([]);
   const [search, setSearch] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
+  const [isUnderMaintenance, setIsUnderMaintenance] = useState(true); //change to true for maintenance, switch to false if showing schedule
   const clientsPerPage = 15;
 
   // Load data on mount
   useEffect(() => {
     setClients(firstDay);
   }, []);
+
+  if (isUnderMaintenance) {
+    return (
+      <Container className="text-center mt-5">
+        <p className="text-danger sub-title">NOT FOUND</p>
+        <p className="fs-4 custom-text">No data is currently available for display.</p>
+        <p className="fs-5 custom-text">Please check back later.</p>
+      </Container>
+    );
+  }
 
   // Filter clients based on search input
   const filteredClients = clients.filter((client) =>
@@ -104,6 +115,7 @@ const FirstDay = () => {
 
   return (
     <Container className="mt-4">
+
       <p className="text-center mb-3 text-uppercase fw-bold schedule-text fs-3">
         March 11, 2025
         <br />

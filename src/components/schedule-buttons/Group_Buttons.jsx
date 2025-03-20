@@ -34,7 +34,7 @@ const Group_Buttons = () => {
       <Button variant="success" className="custom-text" size="lg" href="/SixthDay" disabled>
       March 19, 2025 | 8:00 AM - 5:00 PM ONLY
       </Button>
-      <Button variant="success" className="custom-text" size="lg" href="/SeventhDay">
+      <Button variant="success" className="custom-text" size="lg" href="/SeventhDay" disabled>
       March 20, 2025 | 8:00 AM - 5:00 PM ONLY
       </Button>
       <Button variant="success" className="custom-text" size="lg" href="/EightDay">
