@@ -15,12 +15,23 @@ const EighthDay = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const [showModal, setShowModal] = useState(true);
     const [showPopCard, setShowPopCard] = useState(false);
+    const [isUnderMaintenance, setIsUnderMaintenance] = useState(true); //change to true for maintenance, switch to false if showing schedule
     const clientsPerPage = 15;
 
   // Load data on mount
-  useEffect(() => {
-    setClients(eightDay);
-  }, []);
+   useEffect(() => {
+     setClients(eightDay);
+   }, []);
+ 
+     if (isUnderMaintenance) {
+       return (
+         <Container className="text-center mt-5">
+           <p className="text-danger sub-title">NOT FOUND</p>
+           <p className="fs-4 custom-text">No data is currently available for display.</p>
+           <p className="fs-5 custom-text">Please check back later.</p>
+         </Container>
+       );
+     }
 
   // Filter clients based on search input
   const filteredClients = clients.filter((client) =>

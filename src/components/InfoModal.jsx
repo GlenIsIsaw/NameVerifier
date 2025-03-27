@@ -44,10 +44,10 @@ const InfoModal = ({ show, handleClose }) => {
           <p className="modal-text"> Please check your personal details and schedule here. If some details
           are wrong, such as <strong>misspelled names</strong>,{" "}
           <strong>incorrect address</strong>, or <strong>wrong birthday</strong>
-          , please approach our staff for your concern.
+          , please approach our staff for your concern to be subject for <strong>re-schedule</strong>.
         </p>
         <p className="modal-text">
-          Our partner agency strictly implements the{" "}
+          <strong>DSWD</strong> as our partner agency strictly implements the{" "}
           <strong>8:00 AM to 5:00 PM</strong> time slot. Be present during your
           scheduled time.
         </p>

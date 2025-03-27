@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Table, Form, Pagination, Container, Alert } from "react-bootstrap";
 import FloatingButton from "../FloatingButton";
 import PopCard from "../PopCard";
+import InfoModal from "../InfoModal";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import InputGroup from "react-bootstrap/InputGroup";
@@ -9,11 +10,13 @@ import { firstDay } from "../../Data/firstDay.js"; // Import the actual data
 import '../../App.css';
 
 const FirstDay = () => {
-  const [clients, setClients] = useState([]);
-  const [search, setSearch] = useState("");
-  const [currentPage, setCurrentPage] = useState(1);
-  const [isUnderMaintenance, setIsUnderMaintenance] = useState(true); //change to true for maintenance, switch to false if showing schedule
-  const clientsPerPage = 15;
+   const [clients, setClients] = useState([]);
+      const [search, setSearch] = useState("");
+      const [currentPage, setCurrentPage] = useState(1);
+      const [showModal, setShowModal] = useState(true);
+      const [showPopCard, setShowPopCard] = useState(false);
+      const [isUnderMaintenance, setIsUnderMaintenance] = useState(false); //change to true for maintenance, switch to false if showing schedule
+      const clientsPerPage = 15;
 
   // Load data on mount
   useEffect(() => {
@@ -113,17 +116,22 @@ const FirstDay = () => {
     return paginationItems;
   };
 
+  const handleInfoModalClose = () => {
+    setShowModal(false);
+    setTimeout(() => setShowPopCard(true), 300); // Show PopCard after InfoModal closes
+  };
+
   return (
     <Container className="mt-4">
 
       <p className="text-center mb-3 text-uppercase fw-bold schedule-text fs-3">
-        March 11, 2025
+        March 28, 2025
         <br />
         <span className="fs-6 fw-semibold text-success">Date</span>
       </p>
 
       <p className="text-center mb-3 text-uppercase fw-bold schedule-sub-text fs-3">
-        BARANGAY II Covered Court ( Daet )
+        TBA
         <br />
         <span className="fs-6 fw-semibold text-success">Venue</span>
       </p>
@@ -146,20 +154,26 @@ const FirstDay = () => {
       <Table striped bordered hover responsive>
         <thead className="table-success">
           <tr>
-            <th>No.</th>
+           {/* <th>No.</th>*/}
+            <th>Barangay</th>
             <th>Last Name</th>
             <th>First Name</th>
             <th>Middle Name</th>
+            <th>Extension Name</th>
+            <th>Birthdate</th>
           </tr>
         </thead>
         <tbody>
           {currentClients.length > 0 ? (
             currentClients.map((client, index) => (
               <tr key={client.id}>
-                <td>{indexOfFirstClient + index + 1}</td>
-                <td className="text-uppercase">{client.last_Name}</td>
-                <td className="text-uppercase">{client.first_Name}</td>
-                <td className="text-uppercase">{client.middle_Name}</td>
+               {/* <td>{indexOfFirstClient + index + 1}</td>*/}
+                <td className="text-uppercase">{client.barangay}</td>
+                <td className="text-uppercase">{client.lastName}</td>
+                <td className="text-uppercase">{client.firstName}</td>
+                <td className="text-uppercase">{client.middleName}</td>
+                <td className="text-uppercase">{client.extensionName}</td>
+                <td className="text-uppercase">{client.birthDate}</td>
               </tr>
             ))
           ) : (
@@ -186,7 +200,8 @@ const FirstDay = () => {
       </Pagination>
 
       <FloatingButton />
-      <PopCard />
+      <InfoModal show={showModal} handleClose={handleInfoModalClose} />
+      {showPopCard && <PopCard />} 
     </Container>
   );
 };
