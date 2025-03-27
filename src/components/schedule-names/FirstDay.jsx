@@ -131,7 +131,7 @@ const FirstDay = () => {
       </p>
 
       <p className="text-center mb-3 text-uppercase fw-bold schedule-sub-text fs-3">
-        TBA
+        Covered Court, Greenview Subdivion, Camambugan, Daet C.N
         <br />
         <span className="fs-6 fw-semibold text-success">Venue</span>
       </p>
