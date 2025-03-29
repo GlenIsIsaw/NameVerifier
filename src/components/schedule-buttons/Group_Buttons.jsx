@@ -10,7 +10,7 @@ const Group_Buttons = () => {
       <h4 style={{ display: 'none' }}>
         <div className="spann sub-title" style={{ display: 'none' }} >First Schedule</div>
       </h4>
-      <Button variant="success" className="custom-text" size="lg" href="/FirstDay">
+      <Button variant="success" className="custom-text" size="lg" href="/FirstDay" style={{ display: 'none' }} disabled>
         March 28, 2025 | 8:00 A.M - 5:00 P.M ONLY
       </Button>
       <Button variant="success" className="custom-text" size="lg" href="/SecondDay" style={{ display: 'none' }} disabled>
