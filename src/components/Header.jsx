@@ -83,7 +83,7 @@ function Header() {
                   📖 Educational Assistance
                 </Dropdown.Item>
                 <Dropdown.Item as={Link} to="/Akap" disabled>
-                  🔹AKAP{" "}
+                  🔹AICS{" "}
                 </Dropdown.Item>
                 <Dropdown.Item
                   as={Link}
