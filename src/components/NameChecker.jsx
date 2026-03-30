@@ -10,56 +10,66 @@ import Maintenance from "./Maintenance";
 // Security validation function for external URLs
 const validateExternalUrl = (url) => {
   if (!url) return false;
-  
+
   // Only allow HTTPS for maximum security (no HTTP)
-  const allowedProtocols = ['https:'];
+  const allowedProtocols = ["https:"];
   const blockedPatterns = [
     /javascript:/i,
     /data:/i,
     /vbscript:/i,
     /file:/i,
     /about:/i,
-    /chrome:/i
+    /chrome:/i,
   ];
-  
+
   try {
     const urlObj = new URL(url);
-    
+
     // Only allow HTTPS protocol (more secure)
     if (!allowedProtocols.includes(urlObj.protocol)) {
-      console.error('Security: Only HTTPS is allowed', urlObj.protocol);
+      console.error("Security: Only HTTPS is allowed", urlObj.protocol);
       return false;
     }
-    
+
     // Block known malicious patterns
     for (const pattern of blockedPatterns) {
       if (pattern.test(url)) {
-        console.error('Security: Blocked malicious URL pattern');
+        console.error("Security: Blocked malicious URL pattern");
         return false;
       }
     }
-    
+
     return true;
   } catch {
-    console.error('Security: Invalid URL format');
+    console.error("Security: Invalid URL format");
     return false;
   }
 };
 
 // Safe External Button Component
-const SafeExternalButton = ({ children, href, variant, className, size, block, ...props }) => {
+const SafeExternalButton = ({
+  children,
+  href,
+  variant,
+  className,
+  size,
+  block,
+  ...props
+}) => {
   const [isValid, setIsValid] = useState(true);
-  
+
   const handleClick = (e) => {
     if (!validateExternalUrl(href)) {
       e.preventDefault();
       setIsValid(false);
-      alert('This link cannot be opened for security reasons. Please contact support.');
+      alert(
+        "This link cannot be opened for security reasons. Please contact support.",
+      );
       return false;
     }
     return true;
   };
-  
+
   if (!isValid) {
     return (
       <Button
@@ -73,7 +83,7 @@ const SafeExternalButton = ({ children, href, variant, className, size, block, .
       </Button>
     );
   }
-  
+
   return (
     <Button
       variant={variant}
@@ -93,13 +103,10 @@ const SafeExternalButton = ({ children, href, variant, className, size, block, .
 };
 
 const NameChecker = () => {
-  
   const [maintenanceMode, setMaintenanceMode] = useState(false);
 
- 
   useEffect(() => {
-   
-    const isMaintenance = false; 
+    const isMaintenance = false;
     setMaintenanceMode(isMaintenance);
   }, []);
 
@@ -148,29 +155,25 @@ const NameChecker = () => {
             animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
             transition={{ duration: 0.5 }}
           >
-            <div className="title-page mt-2">Name Checker</div>
+            <div className="title-page mt-2">Educational Assistance</div>
             <p className="sub-page">
-              The Schedule Checker is a simple yet powerful tool designed to verify
-              your name and payout schedule. With this tool, users can input
-              their personal information, primarily their name, and the
-              corresponding payout schedule they expect. The tool then
-              cross-references this information against predetermined criteria
-              to ensure accuracy and validity. By leveraging advanced algorithms
-              and validation techniques, the Name Checker helps users avoid
-              errors and discrepancies in their payout schedules. It provides
-              instant feedback, indicating whether the entered name matches the
-              payout schedule or if any adjustments are needed.
+              The Educational Assistance Program, made possible through the
+              people’s tax money and in partnership with a national government
+              agency, is designed to provide accessible, reliable support to
+              those in need. It offers a simple and comfortable way for
+              beneficiaries to verify their eligibility and receive assistance,
+              ensuring a smooth, transparent, and people-centered experience
+              every step of the way.
             </p>
             <p className="blinking-text fw-bold text-uppercase text-center">
-              To avoid text-scams and fake SMS regarding the Educational Assistance Program, Please check your schedule here.
+              To avoid text-scams and fake SMS regarding the Educational
+              Assistance Program, Please check announcement here.
             </p>
-            
+
             {/* Sub-title and Large Responsive Button */}
             <div className="text-center mb-5">
-              <p className="sub-title mb-4">
-                Educational Assistance 2026 Batch 1.0 - List of Schedules
-              </p>
-              
+              <p className="sub-title mb-4">Educational Assistance 2026</p>
+
               {/* Large Responsive Button */}
               <div className="d-flex justify-content-center">
                 <SafeExternalButton
@@ -184,11 +187,10 @@ const NameChecker = () => {
                 </SafeExternalButton>
               </div>
             </div>
-            
-          </motion.div>      
-          
-          <Group_Buttons/>
-              {/* <Data_Table />  */}
+          </motion.div>
+
+          <Group_Buttons />
+          {/* <Data_Table />  */}
         </Container>
       )}
     </div>
