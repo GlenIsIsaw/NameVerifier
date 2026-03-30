@@ -28,7 +28,7 @@ const Footer = () => {
           */}
         </ul>
         <p className="text-center text-body-secondary">
-          &copy; 2025{" "}
+          &copy; 2026{" "}
           <span className="text-uppercase footer-font">
             Developed by Glen
           </span>

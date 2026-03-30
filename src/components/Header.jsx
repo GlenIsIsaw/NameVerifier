@@ -80,10 +80,10 @@ function Header() {
 
               <Dropdown.Menu className="custom-dropdown">
                 <Dropdown.Item as={Link} to="/NameChecker">
-                  📖 Educational Assistance
+                  Educational Assistance
                 </Dropdown.Item>
                 <Dropdown.Item as={Link} to="/Akap" disabled>
-                  🔹AICS{" "}
+                AICS{" "}
                 </Dropdown.Item>
                 <Dropdown.Item
                   as={Link}
@@ -91,7 +91,7 @@ function Header() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  🌐 E-Congress
+                  E-Congress
                 </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>

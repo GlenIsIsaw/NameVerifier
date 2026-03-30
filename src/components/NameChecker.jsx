@@ -177,6 +177,7 @@ const NameChecker = () => {
                   variant="success"
                   className="text-uppercase fw-bold external-button"
                   size="lg"
+                  disabled
                   href={EXTERNAL_WEBSITE_URL}
                 >
                   View Official Website
