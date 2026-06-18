@@ -172,7 +172,7 @@ const NameChecker = () => {
 
             {/* Sub-title and Large Responsive Button */}
             <div className="text-center mb-5">
-              <p className="sub-title mb-4">Educational Assistance 2026</p>
+              <p className="sub-title mb-4">Educational Assistance and Scholarships 2026</p>
 
               {/* Large Responsive Button */}
               <div className="d-flex justify-content-center">
@@ -183,7 +183,18 @@ const NameChecker = () => {
                   disabled
                   href={EXTERNAL_WEBSITE_URL}
                 >
-                  View Official Website
+                  Educational Assistance 2026 - Not available
+                </SafeExternalButton>
+              </div>
+                 <div className="d-flex justify-content-center mt-3">
+                <SafeExternalButton
+                  variant="success"
+                  className="text-uppercase fw-bold external-button"
+                  size="lg"
+                  disabled
+                  href={EXTERNAL_WEBSITE_URL}
+                >
+                 Unifast Tulong Dunong Program - Not Available
                 </SafeExternalButton>
               </div>
             </div>
