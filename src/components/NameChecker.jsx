@@ -155,9 +155,9 @@ const NameChecker = () => {
             animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
             transition={{ duration: 0.5 }}
           >
-            <div className="title-page mt-2">Educational Assistance</div>
+            <div className="title-page mt-2">Scholarship and Assistance</div>
             <p className="sub-page">
-              The Educational Assistance Program, made possible through the
+              This Program, made possible through the
               people’s tax money and in partnership with a national government
               agency, is designed to provide accessible, reliable support to
               those in need. It offers a simple and comfortable way for
@@ -167,12 +167,12 @@ const NameChecker = () => {
             </p>
             <p className="blinking-text fw-bold text-uppercase text-center">
               To avoid text-scams and fake SMS regarding the Educational
-              Assistance Program, Please check announcement here.
+              Assistance/Scholarship Program, Please check announcement here.
             </p>
 
             {/* Sub-title and Large Responsive Button */}
             <div className="text-center mb-5">
-              <p className="sub-title mb-4">Educational Assistance and Scholarships 2026</p>
+              <p className="sub-title mb-4">Educational Assistance and Scholarship 2026</p>
 
               {/* Large Responsive Button */}
               <div className="d-flex justify-content-center">
