@@ -139,7 +139,8 @@ const NameChecker = () => {
   }, []);
 
   // Replace with your actual external website URL
-  const EXTERNAL_WEBSITE_URL = "https://educational-assistance-2d.vercel.app";
+  const EXTERNAL_WEBSITE_URL = "https://ea-application.vercel.app";
+  const EXTERNAL_WEBSITEE_URL = "https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1";
 
   return (
     <div>
@@ -183,7 +184,7 @@ const NameChecker = () => {
                   disabled
                   href={EXTERNAL_WEBSITE_URL}
                 >
-                  Educational Assistance 2026 - Not available
+                  Educational Assistance 2026 - Getting Ready
                 </SafeExternalButton>
               </div>
                  <div className="d-flex justify-content-center mt-3">
@@ -192,9 +193,9 @@ const NameChecker = () => {
                   className="text-uppercase fw-bold external-button"
                   size="lg"
                   disabled
-                  href={EXTERNAL_WEBSITE_URL}
+                  href={EXTERNAL_WEBSITEE_URL}
                 >
-                 Unifast Tulong Dunong Program - Not Available
+                 Unifast Tulong Dunong Program 2026 - Getting Ready
                 </SafeExternalButton>
               </div>
             </div>
