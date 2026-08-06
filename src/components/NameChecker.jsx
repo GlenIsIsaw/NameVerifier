@@ -139,8 +139,8 @@ const NameChecker = () => {
   }, []);
 
   // Replace with your actual external website URL
-  const EXTERNAL_WEBSITE_URL = "https://www.youtube.com/watch?v=9Tyq9k5FdYU&list=RD9Tyq9k5FdYU&start_radio=1";
-  const EXTERNAL_WEBSITEE_URL = "https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1";
+  const EXTERNAL_WEBSITE_URL = "https://ea-application.vercel.app";
+  const EXTERNAL_WEBSITEE_URL = "https://www.youtube.com/watch?v=M12F2FAf04g&list=RDM12F2FAf04g&start_radio=1";
 
   return (
     <div>
