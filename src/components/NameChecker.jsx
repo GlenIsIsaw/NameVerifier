@@ -181,10 +181,10 @@ const NameChecker = () => {
                   variant="success"
                   className="text-uppercase fw-bold external-button"
                   size="lg"
-                  disabled
+                  //disabled
                   href={EXTERNAL_WEBSITE_URL}
                 >
-                  Educational Assistance 2026 - Getting Ready
+                  Educational Assistance 2026
                 </SafeExternalButton>
               </div>
                  <div className="d-flex justify-content-center mt-3">
@@ -195,7 +195,7 @@ const NameChecker = () => {
                   disabled
                   href={EXTERNAL_WEBSITEE_URL}
                 >
-                 Unifast Tulong Dunong Program 2026 - Getting Ready
+                 Unifast Tulong Dunong Program 2026
                 </SafeExternalButton>
               </div>
             </div>
