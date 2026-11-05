@@ -139,7 +139,7 @@ const NameChecker = () => {
   }, []);
 
   // Replace with your actual external website URL
-  const EXTERNAL_WEBSITE_URL = "https://ea-application.vercel.app";
+  const EXTERNAL_WEBSITE_URL = "https://2dcn-educational-assistance.vercel.app/";
   const EXTERNAL_WEBSITEE_URL = "https://www.youtube.com/watch?v=M12F2FAf04g&list=RDM12F2FAf04g&start_radio=1";
 
   return (
