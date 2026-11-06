@@ -168,7 +168,7 @@ const NameChecker = () => {
             </p>
             <p className="blinking-text fw-bold text-uppercase text-center">
               To avoid text-scams and fake SMS regarding the Educational
-              Assistance/Scholarship Program, Please check announcement here.
+              Assistance/Scholarship Program, Please check here.
             </p>
 
             {/* Sub-title and Large Responsive Button */}
